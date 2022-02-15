@@ -13,7 +13,11 @@ app.about('/about', (req, res) => {
       message: "about page"
   })
 })
-
+app.get('/contact-us', (req, res) => {
+  res.json({
+      message: "contact-us"
+  })
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
